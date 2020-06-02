@@ -10,9 +10,11 @@
 		3581619E24867BDB00503701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581619D24867BDB00503701 /* AppDelegate.swift */; };
 		358161A024867BDB00503701 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581619F24867BDB00503701 /* SceneDelegate.swift */; };
 		358161A224867BDB00503701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358161A124867BDB00503701 /* ViewController.swift */; };
-		358161A524867BDB00503701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358161A324867BDB00503701 /* Main.storyboard */; };
 		358161A724867BDC00503701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358161A624867BDC00503701 /* Assets.xcassets */; };
 		358161AA24867BDC00503701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358161A824867BDC00503701 /* LaunchScreen.storyboard */; };
+		358161B324867D0D00503701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358161B124867D0C00503701 /* Main.storyboard */; };
+		358161C0248683EE00503701 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358161BF248683EE00503701 /* AVFoundation.framework */; };
+		358161C5248687B600503701 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 358161C32486878D00503701 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		3581619D24867BDB00503701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3581619F24867BDB00503701 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		358161A124867BDB00503701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		358161A424867BDB00503701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		358161A624867BDC00503701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		358161A924867BDC00503701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		358161AB24867BDC00503701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		358161B224867D0C00503701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Xylophone-iOS13-master/Xylophone/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		358161BF248683EE00503701 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		358161C32486878D00503701 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358161C0248683EE00503701 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				3581619C24867BDB00503701 /* Pocket-Xylophone */,
 				3581619B24867BDB00503701 /* Products */,
+				358161BE248683ED00503701 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +65,21 @@
 				3581619D24867BDB00503701 /* AppDelegate.swift */,
 				3581619F24867BDB00503701 /* SceneDelegate.swift */,
 				358161A124867BDB00503701 /* ViewController.swift */,
-				358161A324867BDB00503701 /* Main.storyboard */,
+				358161B124867D0C00503701 /* Main.storyboard */,
 				358161A624867BDC00503701 /* Assets.xcassets */,
 				358161A824867BDC00503701 /* LaunchScreen.storyboard */,
 				358161AB24867BDC00503701 /* Info.plist */,
+				358161C32486878D00503701 /* Sounds */,
 			);
 			path = "Pocket-Xylophone";
+			sourceTree = "<group>";
+		};
+		358161BE248683ED00503701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				358161BF248683EE00503701 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358161C5248687B600503701 /* Sounds in Resources */,
 				358161AA24867BDC00503701 /* LaunchScreen.storyboard in Resources */,
 				358161A724867BDC00503701 /* Assets.xcassets in Resources */,
-				358161A524867BDB00503701 /* Main.storyboard in Resources */,
+				358161B324867D0D00503701 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,20 +163,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		358161A324867BDB00503701 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				358161A424867BDB00503701 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		358161A824867BDC00503701 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				358161A924867BDC00503701 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		358161B124867D0C00503701 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				358161B224867D0C00503701 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
